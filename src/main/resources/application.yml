@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${BOOKSTORE_DATABASE_HOST}:${BOOKSTORE_DATABASE_LOCAL_PORT}/${BOOKSTORE_DATABASE_NAME}
+    username: ${BOOKSTORE_DATABASE_USERNAME}
+    password: ${BOOKSTORE_DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
